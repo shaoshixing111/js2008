@@ -19,13 +19,40 @@
         // var a = 123
         // add(a)
         // console.log(a)
-        function add(num)
-        {
-            num[0]++
-        }
-        var arr = [11]
-        add(arr)
-        console.log(arr)
+        // function add(num)
+        // {
+        //     num[0]++
+        // }
+        // var arr = [11]
+        // add(arr)
+        // console.log(arr)
+        // function add()
+        // {
+        //     console.log(arguments)
+        //     return arguments[0] + arguments[1]
+        // }
+        // var num = add(11,22)
+        // console.log(num)
+        // function test1()
+        // {
+        // function test2(a,b){
+        //     console.log(1111)
+        //     console.log(a+b)
+        // }
+        // return test2
+        // }
+        // test1()(11,22)
+            function test1(add)
+            {
+                console.log(111)
+                var a = 111
+                var b = 222
+                add(a,b)
+            }
+            function test2(num1,num2){
+                console.log(num1+num2)
+            }
+            test1(test2)
     </script>
 </body>
 </html>
