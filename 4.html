@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var A = {
+            name: '张三'
+        }
+        var B = {
+            name: '李四'
+        }
+        var proto = {
+            print: function (){
+                console.log(this.name)
+            }
+        }
+        A.__proto__ = proto
+        B.__proto__ = proto
+        A.print()
+        B.print()
+        A.print === B.print
+        A.print === proto.print
+        B.print === proto.print
+    </script>
+</body>
+</html>
