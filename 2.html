@@ -7,7 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="button" value="AAA" class="sb">
+    <input type="button" value="BBB" class="sb">
+    <input type="button" value="CCC" class="sb">
+    <input type="button" value="DDD" class="sb">
+    <input type="button" value="FFF" class="sb">
     <script>
+        var sb = document.querySelectorAll(".sb")
+        for(var i=0;i<sb.length;i++){
+            sb[i].index=i
+            sb[i].onclick = function(){
+                console.log(this.index)
+            }
+        }
         // function test1(){
         //     alert(111)
         // }
@@ -42,17 +54,17 @@
         // return test2
         // }
         // test1()(11,22)
-            function test1(add)
-            {
-                console.log(111)
-                var a = 111
-                var b = 222
-                add(a,b)
-            }
-            function test2(num1,num2){
-                console.log(num1+num2)
-            }
-            test1(test2)
+        // function test1(add)
+        // {
+        //     console.log(111)
+        //     var a = 111
+        //     var b = 222
+        //     add(a,b)
+        // }
+        // function test2(num1,num2){
+        //     console.log(num1+num2)
+        // }
+        // test1(test2)
     </script>
 </body>
 </html>
