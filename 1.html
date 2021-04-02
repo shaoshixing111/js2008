@@ -7,7 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello啊啊</h1>
-    <h2>傻逼</h2>
+    <script>
+        let arr1 = ["aa","bb","cc","dd","cc"]
+        let obj1 = {
+            name: "zhangsan",
+            age: 11,
+            sex: "M"
+        }
+        let s2 = new Set([11,22,33,44])
+        console.log(arr1.keys())
+        console.log(Array.prototype)
+        console.log(Object.prototype)
+        // let s2 = new Set(arr1)
+        // console.log(s2.size)
+
+
+        let s1 = new Set()
+        // console.log(Set.prototype)
+        s1.add(11)
+        s1.add(99)
+        s1.add(33)
+        s1.add(22)
+        s1.has(33)
+        console.log(s1)
+        s1.delete(99)
+        console.log(s1)
+        // let set = new Set(['red', 'green', 'blue']);
+        // for (let x of set) {
+        //     console.log(x);
+        // }
+    </script>
+    <!-- <h1>Hello啊啊</h1>
+    <h2>傻逼</h2> -->
 </body>
 </html>
