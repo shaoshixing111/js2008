@@ -56,18 +56,30 @@
 
         // obj1.name
         // obj1.name = "lisi"
-            class IncreasingCounter{
-                constructor(){
-                    this._count = 0;
-                }
-                get value(){
-                console.log('Getting the current value!');
-                return this._count;
+        // class IncreasingCounter{
+        //     constructor(){
+        //         this._count = 0;
+        //     }
+        //     get value(){
+        //     console.log('Getting the current value!');
+        //     return this._count;
+        // }
+        //     increment(){
+        //         this._count++
+        //     }
+        // }
+        class person{
+            constructor(name,age){
+                this.name = name
+                this.age = age
             }
-                increment(){
-                    this._count++
-                }
+            static color="black"
+            static say(){
+                console.log("Hello world")
             }
+        }
+        let p1 = new person("zhangsan",22)
+        console.log(person.color)
     </script>
 </body>
 </html>
