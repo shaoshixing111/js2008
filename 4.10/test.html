@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj1 ={
+            name: "zhangsan",
+            age: 22,
+            sex: "Nan"
+        }
+        function *it(){
+            const keys = Object.keys(this)
+            for(let k of keys){
+                yield k
+            }
+        }
+        Object.prototype[Symbol.iterator] = it
+        for(let k of obj1){
+            console.log(k,obj1[k])
+        }
+    </script>
+</body>
+</html>

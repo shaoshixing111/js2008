@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="num1++">{{num1}}</button>
+        <button @click="num2++">{{num2}}</button>
+        <button @click="test1">点击1</button>
+        <button @click="test1()">点击2</button>
+        <button @click="test2(11,22)">点击3</button>
+    </div>
+    
+    <a v-on:click.prevent="baidu" href="https://www.baidu.com">Baidu</a>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                num1:0,
+                num2:0,
+            },
+            methods:{
+                test1(){
+                    this.num1++
+                    this.num2++
+                    console.log("Hello world")
+                },
+                test2(a,b){
+                    console.log(a,b)
+                },
+                baidu(){
+                    alert("Baidu")
+                }
+            }
+        })
+    </script>
+</body>
+</html>
